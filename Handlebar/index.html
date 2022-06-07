@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello Handlebars</title>
+    <title>Akumina Questionaire</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-    
   </head>
   <body>
     <script type="text/x-handlebars-template" id="handlebars-template">
-        <ul>
-            {{#each this}} 
-            <li>
-                <a href={{url}}>{{this.title}}</a><span>{{this.summary}}</span>
-            </li>
-            {{/each}}
-        </ul>
-    </script>   
+      <ul>
+        {{#each this}}
+          <li>
+            <a href={{url}}>{{this.title}}</a><span>{{this.summary}}</span>
+          </li>
+        {{/each}}
+      </ul>
+    </script>
     <div id="output"></div>
     <script src="handlebars.js"></script>
   </body>
